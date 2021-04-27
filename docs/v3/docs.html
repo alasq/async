@@ -5220,7 +5220,7 @@ Invoked with (value, callback).</p></td>
             
 
             <td class="description last"><p>A callback which is called when all <code>iteratee</code>
-functions have finished, or an error occurs. Result is an <code>Object</code> whoses
+functions have finished, or an error occurs. Result is an <code>Object</code> whose
 properties are arrays of values which returned the corresponding key.</p></td>
         </tr>
 
@@ -14781,7 +14781,7 @@ callback. Invoked with (err, [results]);</p></td>
     
     <pre class="prettyprint"><code>const results = []
 let finished = false
-async.until(function test(page, cb) {
+async.until(function test(cb) {
     cb(null, finished)
 }, function iter(next) {
     fetchPage(url, (err, body) =&gt; {
